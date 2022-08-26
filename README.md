@@ -3,70 +3,87 @@ Revisão sobre a linguagem Java
 
 ## Tópicos de Estudos
 
-* [Linguagem de programação Java](01.md)
-  * Paradigmas de Programação
-  * Modelo de Tipagem de dados
-  * Modelo de construção da Linguagem  
-  * Estilo de código
-  * Versões
-    * Java 1.8
-      * Novas funcionalidades 
-    * Java 11
-      * Novas funcionalidades
-    * Java 18
-      * Novas funcionalidades
-    * Java 19 
-      * Novas funcionalidades
-  * Conjunto de palavras reservadas
-  * Ambiente de Desenvolvimento e Ferramentas
-    * Documentação oficial
-    * JDK
-    * IDEs
-      * Como criar um projeto Java em uma IDE
-  * Mercado
-    * Popularidade 
-      * Tiobe
-      * Survey da Stackoverflow 
-      * Survey da Jetbrains 
-    * Vagas e salários 
-      * Survey da Stackoverflow 
-      * Survey da Jetbrains  
-    * Áreas de aplicações da linguagem Java 
-      * Survey da Stackoverflow 
-      * Survey da Jetbrains  
-    * Principais bibliotecas/frameworks 
-      * Survey da Stackoverflow 
-      * Survey da Jetbrains  
-* [Hello World](02.md)
-  * Estrutura mínima de um código Java
-  * Nome do arquivo e Extensão
-  * Nome da classe
-  * Método main
-  * Escrever dados no console
-  * Indentação de código
-  * Delimitação de uma instrução
-  * Delimitação de bloco de instruções
-  * Compilação e Execução via linha de comando
 * [Tipos de Dados e operadores](03.md)
-  * Tipos de Dados
+ * Tipos de Dados
+  
+    Tipos primitivos: boolean, byte, char, short, int, long, float e double;
+Strings, Arrays Primitivos e Objetos.
+
+
   * Declarações de variáveis
+
+    As declaração são feitas atraves do nome junção do tipo de dado com o nome da variável, podendo também já receber um valor.
+  
   * Nomes válidos para variáveis e boas práticas 
+ Os nomes de variáveis geralmente são feitos em lowerCamelCase que é o padrão camelCase com a primeira letra minuscula. Existem alguns padrões obrigatorios para as variáveis como: Deve conter apenas letras, _ (underline), $ ou os números de 0 a 9
+    * Deve obrigatoriamente se iniciar por uma letra (preferencialmente), _ ou $
+    * Deve iniciar com uma letra minúscula (boa prática – ver abaixo)
+    * Não pode conter espaços
+    * Não podemos usar palavras reservadas do sistema.
+
   * Atribuição de valores
+  
+    * São utilizados para difinir ou redefinir valores a variáveis.
+
   * Operadores
     * Operadores aritméticos
+        * Operadores utilizados para realização de operações matemáticas primitivas. +, -, *, / e %
+        
     * Operadores booleanos
+        * Operadores utilizados para verificar se alguma condição é verdadeira ou falsa, como: &&, ||.
+    
   * Conversão de tipos de dados
+    * Existem várias conversões de dados possiveis em Java como por exemplo:
+    ```Java
+    double d = 10.0;
+    String str = Double.toString(d);
+    ```
+  
 * [Saída de Dados](04.md)
   * Método System.out.println
+    ```Java
+    System.out.println("Hello World");
+    ```
+  
   * Método System.out.print
+      ```Java
+    System.out.print("Hello World");
+    ```
+    
   * Exibir o valor de uma variável
-  * Exibir o valor de um decimal  
+  * 
+    ```Java
+    String s = "Hello World";
+    System.out.print(s);
+    ```
+    
+  * Exibir o valor de um decimal
+      ```Java
+    String d = 10.00;
+    System.out.print(d);
+    ```
 * Classe Math
   * Definição
+    * Java Math é uma classe que possibilita resolver operações matemáticas mais complexas.
+
   * Principais operações 
+    * Math.max( x,y ), Math.min( x,y ), Math.sqrt( x ), Math.abs( x ), Math.random()
 * String
   * Concatenação de String
+  ```Java
+     String s1 = "Olá ";
+     String s2 = "Mundo!";
+     System.out.println( s1.concat( s2 ) );
+     System.out.println( s1 + s2 );
+  ```
   * Principais operações sobre String
+    * charAt, codePointAt, compareTo e compareToIgnoreCase, endsWith e startsWith, toCharArray, getBytes, isEmpty, split, substring e subSequence.
+    ```Java 
+    String valor = "Henry";
+    System.out.println(valor.subSequence(0, 2));
+    
+    //Saída: Hen
+    ```
   * Comparação de String
   * Diferença entre String e caracter
 * Entrada de Dados
