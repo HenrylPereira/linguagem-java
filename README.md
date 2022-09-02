@@ -58,7 +58,7 @@ Strings, Arrays Primitivos e Objetos.
     ```
     
   * Exibir o valor de um decimal
-      ```Java
+    ```Java
     String d = 10.00;
     System.out.print(d);
     ```
@@ -85,18 +85,75 @@ Strings, Arrays Primitivos e Objetos.
     //Saída: Hen
     ```
   * Comparação de String
+    ```Java
+    String literal = "str";
+    String outraLiteral = "str";
+
+    System.out.println(literal == outraLiteral); //exibe true
+    ```
   * Diferença entre String e caracter
+    ```Java
+    String str1 = "str";
+    String str2 = "str";
+
+    System.out.println(st1 == str2); 
+    //exibe true
+    ```
 * Entrada de Dados
   * Classe Scanner
+  É a classe que possibilita a entrada de valores pelo terminal.
+  ```Java
+    Scanner scan = new Scanner(System.in);
+  ```
     * Obter um valor inteiro
+    ```Java
+     Int i = scan.nextInt();
+    ```
     * Obter um valor decimal
+    ```Java
+     Double d = scan.nextDouble();
+    ```
     * Obter um valor de texto 
+    ```Java
+     String s = scan.nextLine();
+    ```
 * Fluxo de Controle
   * Estruturas de Decisões
     * if-else-then
+      ```Java
+        if (condição 1) {
+            // se a consição 1 for verdadeira
+        } else if (condição 2) {
+            // se a consição 1 for falsa e a condição 2 for verdadeira
+        } else {
+            // se as condições anteriores não forem verdadeiras
+        }
+      ```
+      ```Java
+        b = (a > 0) ? 1 : 2; //IF ternário
+      ```
     * switch
+      ```Java
+        switch (condição) {
+        case valor1:
+        // se valor1
+        break;
+        case valor2:
+        // se valor2
+        break;
+      ```
+
   * Estruturas de Repetições
     * for
+      ```Java
+        switch (condição) {
+        case valor1:
+        // se valor1
+        break;
+        case valor2:
+        // se valor2
+        break;
+      ```
     * while
     * do-while 
     * Comandos break e continue
@@ -122,6 +179,8 @@ Strings, Arrays Primitivos e Objetos.
   * Bloco para capturar diferentes exceções 
   * Bloco finally
   * Lançar uma exceção
+  
+  
 * Métodos estáticos
   * Estrutura de declaração de um método estático
   * Nomes válidos e boas práticas 
