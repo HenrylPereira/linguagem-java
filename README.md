@@ -168,17 +168,49 @@ Strings, Arrays Primitivos e Objetos.
         if (i == 4) {
           continue;
         }
+        if (i == 5) {
+          break;
+        }
         System.out.println(i);
       }
     ```
 * Arranjos e Matrizes
   * Definição matemática
+   * Difinição matemárica de arranjo: "Agrupamentos formados com p elementos de um conjunto de n elementos"
+   * Difinição matemárica de matriz: "Matriz é uma tabela organizada em linhas e colunas no formato m x n"
   * Declaração de arranjos
+     ```Java
+        String[] carros = {"Volvo", "VW", "Ford", "Fiat"};
+    ```
   * Declaração de matrizes
+   ```Java
+      int[][] tab = new int[2][2];
+    ```
   * Percorrer arranjos
+   ```Java
+      String[] carros = {"Volvo", "VW", "Ford", "Fiat"};
+      for(String carro : carros){
+        //para cara carro
+      }
+    ```
   * Percorrer matrizes
+   ```Java
+      int[][] tab = new int[10][9];
+      for(int i = 0; i < 10; i++)
+        for(int j = 0; j < 9; j++) tab[i][j] = i*j; 
+    ```
     * Linha a linha
+   ```Java
+      int[][] tab = new int[10][9];
+      for(int i = 0; i < 10; i++)
+        for(int j = 0; j < 9; j++) tab[i][j] = i*j; 
+    ```
     * Coluna a coluna
+   ```Java
+      int[][] tab = new int[10][9];
+      for(int i = 0; i < 10; i++)
+        for(int j = 0; j < 9; j++) tab[i][j] = i*j; 
+    ```
     * Em diagonal 
   * Utilizar arranjos e matrizes como parâmetros de métodos 
   * Utilizar arranjos e matrizes como retorno de métodos 
