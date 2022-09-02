@@ -146,17 +146,31 @@ Strings, Arrays Primitivos e Objetos.
   * Estruturas de Repetições
     * for
       ```Java
-        switch (condição) {
-        case valor1:
-        // se valor1
-        break;
-        case valor2:
-        // se valor2
-        break;
+        for (inicialização da variável; checagem de condição; incremento/decremento do valor da variável) {  
+            comando a ser executado/declaração
+        }
       ```
     * while
+       ```Java
+        while(condição)  {
+            enquanto a condição for verdadeira
+        }
+      ```
     * do-while 
+    ```Java
+      do {
+           // enquanto codição for verdadeira
+      } while (condição);
+    ```
     * Comandos break e continue
+     ```Java
+      for (int i = 0; i < 10; i++) {
+        if (i == 4) {
+          continue;
+        }
+        System.out.println(i);
+      }
+    ```
 * Arranjos e Matrizes
   * Definição matemática
   * Declaração de arranjos
