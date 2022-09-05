@@ -203,7 +203,6 @@ Strings, Arrays Primitivos e Objetos.
    ```Java
       int[][] tab = new int[10][9];
       for(int i = 0; i < 10; i++)
-        for(int j = 0; j < 9; j++) tab[i][j] = i*j; 
     ```
     * Coluna a coluna
    ```Java
@@ -212,20 +211,34 @@ Strings, Arrays Primitivos e Objetos.
         for(int j = 0; j < 9; j++) tab[i][j] = i*j; 
     ```
     * Em diagonal 
+    ```Java
+        for(i=M-1; i>=0; i--){
+          for(j=N-1; j>=0; j--){
+    ```
+
   * Utilizar arranjos e matrizes como parâmetros de métodos 
   * Utilizar arranjos e matrizes como retorno de métodos 
 * Tratamento de Exceções
+  
   * Definição
+  O tratamento de exceções é feito para tratar casos inesperados no código.
   * Exceções comuns
     * Divisão por zero
+      ArithmeticException: / by zero;
     * Conversão de tipos de dados inválidos
     * Acessar uma posição inválida em um arranjo
+      ArrayIndexOutOfBoundsException;
     * Acessar uma String nula
   * Bloco para capturar uma exceção 
-  * Bloco para capturar diferentes exceções 
-  * Bloco finally
-  * Lançar uma exceção
-  
+    ```Java
+    try {
+    //código a ser exec
+    } catch (Exception e) {
+    //executa caso der erro;
+    } finally {
+    //executa de qualquer forma no final;
+    }
+    ```
   
 * Métodos estáticos
   * Estrutura de declaração de um método estático
