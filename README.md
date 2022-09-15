@@ -345,6 +345,7 @@ Strings, Arrays Primitivos e Objetos.
   }
   ```
   * Sobreescrita de métodos
+    A sobrescrita é fazer um método igual a classe pai na classe filha onde a que vai ser executada pode ser selecionada.
   * Polimorfismo
     * Conversão de tipos 
   * Visibilidade de atributos e métodos
