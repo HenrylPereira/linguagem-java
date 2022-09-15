@@ -255,6 +255,7 @@ Strings, Arrays Primitivos e Objetos.
   * Recursão 
 * Classe
   * Definição
+    É a estrutura de um objeto que possui e atributos e métodos;
     * Representação de classe e objeto na UML
     ![image](https://user-images.githubusercontent.com/73833452/190480070-15453aca-62fd-4772-a712-d7e4eaf587e5.png)
 
@@ -306,15 +307,24 @@ Strings, Arrays Primitivos e Objetos.
      ![image](https://user-images.githubusercontent.com/73833452/190484446-318f11ee-c29c-4e8d-9e21-ee299ff606c2.png)
 
   * Definição de um pacote em uma classe
+    São utilizados para fazer a organização de classes.
   * Importando uma classe de um pacote diferente
-    Por meio do
+    É impossível importar classes para outro pacote
   * Visibilidade de classes, atributos e métodos
      * Default/Pacote  
   * Pacote default
+      ```Java
+      import package;
+      ```
     * Importar uma classe em um pacote default 
+      ```Java
+      import package.pacote;
+      ```
 * Escopo de classe e objeto
   * Definição 
-  * Palavra reservada static 
+    O escopo de uma classe são os limites de até onde serta funcionalidade tem efeito sobre a aplicação.
+  * Palavra reservada static
+  * São métodos que não tem nenhuma dependencia de objetos e não dependem de nenhum conteúdo.
 * Herança
   * Definição
     Permite que as classes java possuam uma estrutura onde podem ocorrer classes pais e filhas que podem herdar comportamentos.
