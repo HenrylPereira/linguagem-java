@@ -242,6 +242,10 @@ Strings, Arrays Primitivos e Objetos.
   
 * Métodos estáticos
   * Estrutura de declaração de um método estático
+  ```Java
+  public static void teste () {
+  }
+  ```
   * Nomes válidos e boas práticas 
   * Parâmetros 
   * Retorno
@@ -252,25 +256,58 @@ Strings, Arrays Primitivos e Objetos.
 * Classe
   * Definição
     * Representação de classe e objeto na UML
+    ![image](https://user-images.githubusercontent.com/73833452/190480070-15453aca-62fd-4772-a712-d7e4eaf587e5.png)
+
     * Diferença entre classe e objeto
+      Classe é a estrutura e o objeto é o conteúdo estruturado pela classe;
+    
   * Atributos
+    São as propriedade da classe como: nome, idade e etc..
   * Métodos
-  * Construtor 
+    São as funções, as ações executadas pela classe.
+  * Construtor
+    É a primeira função executada pela classe que pode inicializar o objeto.
   * Objeto
-  * Inicialização de um objeto 
+    É o conteúdo estruturado de uma classe com dados;
+  * Inicialização de um objeto
+    ```Java
+      pessoa pes = new Pessoa();
+    ```
   * Utilização de um objeto
+  ```Java
+    pes.nome = "Henry";
+  ```
   * Comparação de objetos
+    ```Java
+    pes1.equals(pes2); //retorna true ou false
+    ```
   * Método toString
   * Visibilidade de atributos e métodos
     * Público
+      ```Java
+        public String nome;
+      ```
     * Privado 
+      ```Java
+        private String nome;
+      ```
   * Sobrecarga de métodos
+       ```Java
+        @Override
+        public void teste(){
+        }
+      ```
   * Sobrecarga de construtores
+  Uma classe java pode conter mais de um construtor podendo fazer com que o objeto possa ser criado de jeitos diferentes, como por exemplo com a passagem parametros ou sem.
 * Pacotes 
   * Definição
+    São utilizados para fazer a organização de classes.
      * Representação de pacotes na UML
+     ![image](https://user-images.githubusercontent.com/73833452/190484446-318f11ee-c29c-4e8d-9e21-ee299ff606c2.png)
+
   * Definição de um pacote em uma classe
   * Importando uma classe de um pacote diferente
+    Por meio do
   * Visibilidade de classes, atributos e métodos
      * Default/Pacote  
   * Pacote default
@@ -280,8 +317,23 @@ Strings, Arrays Primitivos e Objetos.
   * Palavra reservada static 
 * Herança
   * Definição
+    Permite que as classes java possuam uma estrutura onde podem ocorrer classes pais e filhas que podem herdar comportamentos.
      * Representação de herança na UML
+     ![image](https://user-images.githubusercontent.com/73833452/190485747-9cdec90e-8ed6-46c7-88a1-9824192866ea.png)
+
   * Criação de uma classe que realiza herança 
+  ```Java
+  public class Pessoa {
+    public String nome;
+    public String cpf;
+  }
+  
+  public class Aluno extends Pessoa {
+    public Aluno(String nome, String cpf){
+    super(nome, cpf)
+    }
+  }
+  ```
   * Sobreescrita de métodos
   * Polimorfismo
     * Conversão de tipos 
@@ -297,7 +349,7 @@ Strings, Arrays Primitivos e Objetos.
   * Sobreescrita de métodos
   * Polimorfismo
     * Conversão de tipos 
-* Classe abstrada
+* Classe abstrada ---------------------------------
   * Definição
      * Representação de classe abstrata na UML
   * Criação de uma classe que extende uma classe abstrata
