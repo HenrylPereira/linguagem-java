@@ -347,25 +347,70 @@ Strings, Arrays Primitivos e Objetos.
   * Sobreescrita de métodos
     A sobrescrita é fazer um método igual a classe pai na classe filha onde a que vai ser executada pode ser selecionada.
   * Polimorfismo
-    * Conversão de tipos 
+   Em Java, a visibilidade padrão de classes, atributos e métodos está restrita a todos os membros que fazem parte de um mesmo pacote
+    * Conversão de tipos
+      ```Java
+        int a = 32;
+        String ata = new Character((char)a).toString();
+      ```
+
+
   * Visibilidade de atributos e métodos
+     Em Java, a visibilidade padrão de classes, atributos e métodos está restrita a todos os membros que fazem parte de um mesmo pacote 
      * Protegido
-  * Palavra reservada super 
-     * Encadeamento de construtor 
+      ```Java
+      proctected class(){
+      }
+      ```
+  * Palavra reservada super
+    A palavra reservada super é utilizada para fazer referencia a métodos ou atributos da super classe
+     * Encadeamento de construtor
+     ```Java
+      public Fiat(String motor, String modelo, double preco){
+        super(modelo, preco);
+      }
+     ```
      * Encadeamento de método
+     ```Java
+      super.metodo().
+     ```
 * Interface
   * Definição
      * Representação de interface na UML
   * Criação de uma classe que implementa uma interface
   * Sobreescrita de métodos
+  ```Java
+    double ReajusteTeste()
+      {
+          double Reajuste();
+      }
+
+  ```
   * Polimorfismo
+    O polimorfismo representa situações em que um objeto pode se comportar de diferentes maneiras ao receber uma mensagem.
     * Conversão de tipos 
 * Classe abstrada ---------------------------------
   * Definição
+    É um tipo de classe especial que não pode ser instanciada, apenas herdada. 
      * Representação de classe abstrata na UML
+     * ![image](https://user-images.githubusercontent.com/73833452/190500676-be5a80a6-aac4-42ce-89f5-c6484dd452d5.png)
+
   * Criação de uma classe que extende uma classe abstrata
-  * Polimorfismo
-    * Conversão de tipos 
+   ```Java
+       public class ContaPoupanca extends Conta {
+
+      @Override
+      public void imprimeExtrato() {
+        System.out.println("### Extrato da Conta ###");
+
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/aaaa HH:mm:ss");
+        Date date = new Date();
+
+        System.out.println("Saldo: "+this.getSaldo());
+        System.out.println("Data: "+sdf.format(date));
+    }
+
+   ```
 * Coleções 
   * Definição
   * List e Arraylist 
