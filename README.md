@@ -359,7 +359,7 @@ Strings, Arrays Primitivos e Objetos.
      Em Java, a visibilidade padrão de classes, atributos e métodos está restrita a todos os membros que fazem parte de um mesmo pacote 
      * Protegido
       ```Java
-      proctected class(){
+      protected class(){
       }
       ```
   * Palavra reservada super
