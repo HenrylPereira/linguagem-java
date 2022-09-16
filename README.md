@@ -377,7 +377,23 @@ Strings, Arrays Primitivos e Objetos.
 * Interface
   * Definição
      * Representação de interface na UML
+     ![image](https://user-images.githubusercontent.com/73833452/190530281-948bd695-23ff-4dbb-96f0-5af198e6057a.png)
+
   * Criação de uma classe que implementa uma interface
+  
+  ```Java
+    public interface interface {
+      public String getNome();
+    }
+  
+    public class Quadrado implements interface {
+    @Override
+    public String getNome(){
+      return this.nome;
+    }
+    }
+  ```
+  
   * Sobreescrita de métodos
   ```Java
     double ReajusteTeste()
